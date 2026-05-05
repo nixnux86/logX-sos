@@ -1,13 +1,13 @@
-# logX SOSInsight
+# logX sos
 
-**logX SOSInsight** is a web-based sosreport analysis tool built with **Python + Flask**.  
+**logX sos** is a web-based sosreport analysis tool built with **Python + Flask**.  
 It helps Linux administrators and support engineers upload, parse, review, and troubleshoot Linux sosreport bundles from a modern browser UI.
 
 ---
 
 ## Description
 
-logX SOSInsight extracts useful information from a sosreport archive, stores parsed data in SQLite, and presents it through structured pages such as Dashboard, Summary, System Information, Messages, Dmesg, Network, Storage, Console, and Recent Files.
+logX sos extracts useful information from a sosreport archive, stores parsed data in SQLite, and presents it through structured pages such as Dashboard, Summary, System Information, Messages, Dmesg, Network, Storage, Console, and Recent Files.
 
 Supported sosreport archive formats:
 
@@ -270,8 +270,8 @@ xsos
 ### 1. Extract the project
 
 ```bash
-unzip sosinsight-flask-enhanced-v21.zip
-cd sosinsight-flask
+unzip logX-sos-v1.zip
+cd logX-sos-v1
 ```
 
 ### 2. Create virtual environment
@@ -339,7 +339,7 @@ gunicorn -w 4 -b 0.0.0.0:5000 app:app
 ## Directory Structure
 
 ```text
-sosinsight-flask/
+logX-sos/
 ├── app.py
 ├── init_db.py
 ├── requirements.txt
@@ -355,7 +355,7 @@ sosinsight-flask/
 │   └── logx-icon-scanlines.jpeg
 ├── uploads/
 ├── extracted/
-└── sosinsight.db
+└── logX.db
 ```
 
 ---
@@ -396,6 +396,6 @@ Recommended precautions:
 ## Project Identity
 
 ```text
-logX sosreport tool v1.0
+logX sos tool v1.0
 © 2026 – ideas by nixnux
 ```
